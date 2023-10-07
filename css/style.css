@@ -16,6 +16,10 @@ html {
   color: white;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -27,12 +31,21 @@ html {
   color: white;
 }
 
-.sidebar-header {
+.sidebar-header, 
+.sidebar-user, 
+.btn  {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-grow: 0;
+}
+.sidebar-header {
   padding: 1.1rem 1rem;
+}
+.sidebar-user {
+  margin: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid white;
 }
 
 .square-icon {
@@ -52,14 +65,10 @@ html {
   list-style: none;
   flex-grow: 1;
 }
-
 .sidebar-button-item {
   margin: 0.5rem 0;
 }
 .sidebar-buttons .btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
@@ -79,15 +88,6 @@ html {
   padding: 1rem;
 }
 
-.sidebar-user {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 0;
-  margin: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid white;
-}
 
 
 
