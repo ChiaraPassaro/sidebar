@@ -13,20 +13,25 @@ html {
   width: 100%;
   border: none;
   background-color: cadetblue;
+  color: white;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
   width: 300px;
+  height: 100vh;
   margin: auto;
+  overflow: auto;
+  background-color: #313037;
+  color: white;
 }
-
 
 .sidebar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 0;
   padding: 1.1rem 1rem;
 }
 
@@ -45,6 +50,11 @@ html {
 .sidebar-buttons {
   padding: 0 1rem;
   list-style: none;
+  flex-grow: 1;
+}
+
+.sidebar-button-item {
+  margin: 0.5rem 0;
 }
 .sidebar-buttons .btn {
   display: flex;
@@ -52,18 +62,32 @@ html {
   justify-content: space-between;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  color: #85CEA2;
 }
-
 .sidebar-buttons .btn.active {
+  color: #85CEA2;
   background-color: #24232A;
 }
-
 .sidebar-buttons .btn .btn-text {
   flex-grow: 1;
   text-align: left;
 }
 
+.sidebar-more {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 2;
+  padding: 1rem;
+}
+
+.sidebar-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 0;
+  margin: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid white;
+}
 
 
 
